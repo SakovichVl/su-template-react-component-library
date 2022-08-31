@@ -1,18 +1,23 @@
 {
-  "name": "ourlib_su",
+  "name": "su-template-react-component-library",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "git://github.com/your-org/your-repo-name.git",
   "version": "0.0.1",
   "description": "Our custom React component library",
   "main": "dist/cjs/index.js",
   "scripts": {
     "rollup": "rollup -c"
   },
-  "author": "K1X",
+  "author": "k1x",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.4.0",
     "@types/react": "^18.0.17",
+    "@types/styled-components": "^5.1.26",
     "react": "^18.2.0",
     "rollup": "^2.78.1",
     "rollup-plugin-dts": "^4.2.2",
@@ -23,5 +28,9 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "react-select": "^5.4.0",
+    "styled-components": "^5.3.5"
+  }
 }
